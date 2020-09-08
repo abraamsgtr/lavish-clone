@@ -7,6 +7,7 @@ import { GiCrystalize } from "react-icons/gi";
 import { IconContext } from "react-icons/lib";
 ///Styles
 import "./Pricing.css";
+import pricingHover, { PricingHover } from "./PricingHover";
 
 function Pricing() {
   return (
@@ -21,7 +22,7 @@ function Pricing() {
                   <div className="icon">
                     <FaFire />
                   </div>
-                  <h3 className="text-effect-starter">Starter</h3>
+                  {<PricingHover text={"Starter"} />}
                   <h4>$8.99</h4>
                   <p>per month</p>
                   <ul className="pricing__container-features">
@@ -39,7 +40,7 @@ function Pricing() {
                   <div className="icon">
                     <BsXDiamondFill />
                   </div>
-                  <h3 className="text-effect-gold">Gold</h3>
+                  {<PricingHover text={"Gold"} />}
                   <h4>$29.99</h4>
                   <p>per month</p>
                   <ul className="pricing__container-features">
@@ -57,7 +58,7 @@ function Pricing() {
                   <div className="icon">
                     <GiCrystalize />
                   </div>
-                  <h3 className="text-effect-diamond">Diamond</h3>
+                  {<PricingHover text={"Diamond"} />}
                   <h4>$99.99</h4>
                   <p>per month</p>
                   <ul className="pricing__container-features">
